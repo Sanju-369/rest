@@ -11,9 +11,9 @@ load_dotenv()
 groq_api_key = os.getenv("GROQ_API_KEY")
 
 # === Load CSV files ===
-ayurveda_df = pd.read_csv("C:/Users/deepa/OneDrive/Desktop/ai nurse/ayurveda_knowledge.csv")
-hospital_df = pd.read_csv("C:/Users/deepa/OneDrive/Desktop/ai nurse/Odisha_Hospitals_BloodBanks.csv")
-bloodbank_df = pd.read_csv("C:/Users/deepa/OneDrive/Desktop/ai nurse/rew (1).csv")
+ayurveda_df = pd.read_csv("ayurveda_knowledge.csv")
+hospital_df = pd.read_csv("Odisha_Hospitals_BloodBanks.csv")
+bloodbank_df = pd.read_csv("rew (1).csv")
 
 # === Set up LLM with Groq ===
 llm = ChatGroq(model="llama3-70b-8192", api_key=groq_api_key)
