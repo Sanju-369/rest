@@ -80,3 +80,20 @@ if st.session_state.chat:
     st.subheader("Chat History")
     for speaker, text in reversed(st.session_state.chat):
         st.markdown(f"**{speaker}:** {text}")
+
+
+import streamlit as st
+
+# Hide Streamlit UI elements using custom CSS
+hide_streamlit_style = """
+    <style>
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    header {visibility: hidden;}
+    .stActionButton {display: none;}
+    .stDeployButton {display: none;}
+    .css-1lsmgbg.e1tzin5v3 {display: none;} /* Share, Star, Pencil etc. */
+    </style>
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
