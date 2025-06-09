@@ -1,33 +1,21 @@
-# Core Streamlit app
+# Web app framework
 streamlit
 
-# For loading environment variables
+# For environment variable loading
 python-dotenv
 
-# Common data handling libraries
+# Data processing
 pandas
+
+# Language model (Groq + LangChain)
+langchain
+langchain-groq
+
+# Prompt templating
+openai  # Needed by LangChain for PromptTemplate base class
+
+# Optional but common for CSV handling (already used)
 numpy
 
-# Machine learning and embeddings (optional - include only if you use them)
-scikit-learn
-sentence-transformers
-
-# If you're using LangChain or LangGraph
-langchain
-langgraph
-groq
-
-# If you're using Hugging Face models
-transformers
-
-# For vector storage (like FAISS)
-faiss-cpu
-
-# If using ChromaDB for vector storage
-chromadb
-
-# If using Excel/CSV
+# For Excel or complex CSV formats (if needed in future)
 openpyxl
-
-# For working with environment variables and files
-python-dotenv
